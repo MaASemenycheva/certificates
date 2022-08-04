@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message Cert {
+  string certificate = 1;
+}
+
+message RegistrationResult {
+  bool succeeded = 1;
+  string error = 2;
+}
+
+service RegistrationService {
+  rpc Register(Cert) returns (RegistrationResult);
+}

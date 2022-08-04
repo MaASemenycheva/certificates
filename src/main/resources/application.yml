@@ -1,0 +1,13 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    driverClassName: org.postgresql.Driver
+    #DB connection:
+    url: jdbc:postgresql://localhost:5432/test?stringtype=unspecified
+    username: postgres
+    password: admin
